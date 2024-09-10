@@ -120,6 +120,7 @@ export const createProductByAdmin = async (payload) => {
   return response;
 };
 export const updateProductByAdmin = async ({ currentSlug, ...payload }) => {
+  console.log("PAYLOAd" ,payload)
   const { data: response } = await http.put(`/admin/products/${currentSlug}`, payload);
   return response;
 };

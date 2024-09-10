@@ -129,8 +129,10 @@ export default function CreateShopSettingFrom() {
     }
     setFieldValue('file', file);
     const formData = new FormData();
+    // formData.append('file', file);
+    // formData.append('upload_preset', 'my-uploads');
     formData.append('file', file);
-    formData.append('upload_preset', 'my-uploads');
+    formData.append('upload_preset', 'rrb9kloq');
     const config = {
       onUploadProgress: (progressEvent) => {
         const { loaded, total } = progressEvent;
@@ -138,8 +140,10 @@ export default function CreateShopSettingFrom() {
         setstate({ ...state, logoLoading: percentage });
       }
     };
-    await axios
-      .post(`https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/image/upload`, formData, config)
+    await axios.post(
+        "https://api.cloudinary.com/v1_1/ddmusvbbw/image/upload"
+        // `https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/image/upload`
+        , formData, config)
       .then(({ data }) => {
         setFieldValue('logo', {
           _id: data.public_id,
@@ -165,8 +169,10 @@ export default function CreateShopSettingFrom() {
     }
     setFieldValue('file', file);
     const formData = new FormData();
+    // formData.append('file', file);
+    // formData.append('upload_preset', 'my-uploads');
     formData.append('file', file);
-    formData.append('upload_preset', 'my-uploads');
+    formData.append('upload_preset', 'rrb9kloq');
     const config = {
       onUploadProgress: (progressEvent) => {
         const { loaded, total } = progressEvent;
@@ -174,8 +180,10 @@ export default function CreateShopSettingFrom() {
         setstate({ ...state, loading: percentage });
       }
     };
-    await axios
-      .post(`https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/image/upload`, formData, config)
+    await axios.post(
+        "https://api.cloudinary.com/v1_1/ddmusvbbw/image/upload"
+        // `https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/image/upload`
+        , formData, config)
       .then(({ data }) => {
         setFieldValue('cover', {
           _id: data.public_id,
