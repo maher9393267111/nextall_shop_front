@@ -34,16 +34,16 @@ const SOCIAL_MEDIA_LINK = [
 
 const ADDRESS = [
   {
-    name: '01 Phù Đổng Thiên Vương, Đà Lạt',
+    name: 'Istanbul/Turkey/33evler',
     icon: <MdOutlineLocationOn />
   },
   {
-    name: 'tiendev88@gmail.com',
+    name: 'website@gmail.com',
     linkPath: '/',
     icon: <FiMail fontSize={20} />
   },
   {
-    name: '0944838788 - 0944390988',
+    name: '0944832288 - 09112244388',
     linkPath: '/',
     icon: <MdOutlineCall />
   }
