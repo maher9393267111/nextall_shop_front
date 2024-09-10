@@ -312,7 +312,9 @@ const CheckoutMain = () => {
                 </PayPalScriptProvider>
               </Collapse>
 
-              <Collapse in={paymentMethod !== 'paypal'}>
+              <Collapse 
+               in={paymentMethod !== 'paypal'}
+              >
                 <LoadingButton
                   variant="contained"
                   fullWidth
