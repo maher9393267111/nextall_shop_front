@@ -6,6 +6,7 @@ import NextLink from 'next/link';
 import { alpha, useTheme } from '@mui/material/styles';
 import { Typography, Container, Stack, Box, IconButton, Grid, Link, Fab, Divider } from '@mui/material';
 
+
 // components
 import NewsLetter from './newsletter';
 import Logo from 'src/components/logo';
