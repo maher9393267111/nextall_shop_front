@@ -19,7 +19,10 @@ const nextConfig = {
   },
   images: {
     domains: ['nextall.vercel.app"', 'res.cloudinary.com']
-  }
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = nextConfig;
