@@ -90,7 +90,7 @@ export default function Navbar() {
         <Container maxWidth="xl">
           <Toolbar disableGutters className="toolbar" sx={{ px: '0px!important' }}>
             <Stack gap={4} direction="row" alignItems={'center'}>
-              {/* <Logo /> */}
+              <Logo />
               <Search />
             </Stack>
 
