@@ -80,7 +80,7 @@ export default function LoginForm() {
   const { errors, touched, setFieldValue, values, handleSubmit, getFieldProps } = formik;
   return (
     <>
-      <Stack
+      {/* <Stack
         mb={3}
         gap={2}
         sx={{
@@ -125,7 +125,10 @@ export default function LoginForm() {
           <AlertTitle>Vendor</AlertTitle>
           <b>Email:</b> vendor@test.com | <b>password:</b> test1234
         </Alert>
-      </Stack>
+      </Stack> */}
+
+
+
 
       <FormikProvider value={formik}>
         <Form autoComplete="off" noValidate onSubmit={handleSubmit}>
